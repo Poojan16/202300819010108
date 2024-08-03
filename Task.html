@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.cta {
+    background-color: #e63946;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.mission {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.newsletter button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.main-content {
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Space out the text and background */
+  padding: 20px; /* Add some padding */
+  flex: 1;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.background-content {
+  flex: 1;
+  background-color: #f1f1f1; /* Light grey background */
+  padding: 50px; /* Adjust padding as needed */
+  margin-left: 20px; /* Optional: add some space between text and background */
+  border-radius: 8px; /* Optional: add rounded corners */
+  height: 300px; /* Set a fixed height for the background */
+}
+
+.cta-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.hero-section {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out text and button */
+  background-color: #f1f1f1; /* Light grey background */
+  padding: 20px;
+  border-radius: 8px; /* Optional: add rounded corners */
+  margin-bottom: 40px;
+}
+
+.hero-text h1 {
+  margin: 0 0 10px;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: darkgrey;
+}
+
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-text {
+  flex: 2;
+}
+
+.mission-points {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.point-icon {
+  width: 20px;
+  height: 20px;
+  background-color: grey;
+  margin-right: 10px;
+  border-radius: 4px; /* Optional: add rounded corners */
+}
+
+.mission-text h2 {
+  margin-top: 0;
+}
+
+.mission-points p {
+  margin: 0;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <main class="main-content">
+        <section style="display: flex;">
+          <div class="text-content">
+            <h1 style="font-size: 50px;">The future of web design, today</h1>
+            <h2>The future of web design, today</h2>
+            <button class="cta-button">Call to action</button>
+          </div>
+          <div class="background-content">
+            <!-- This div serves as the grey background with padding -->
+          </div>
+        </section>
+        <section class="hero-section" style="margin-top: 50px;">
+          <div class="hero-text">
+            <h1>Don’t forget to grab this one, it’s free!</h1>
+            <p>Download the Ultimate con tomate guide.</p>
+          </div>
+          <div class="hero-cta">
+            <button class="cta-button">Call to action</button>
+          </div>
+        </section>
+    
+        <section class="mission-section" style="margin-left: 250px;">
+          <div class="mission-text">
+            <h2>What we do</h2>
+            <p>Our mission is very important to the planet: we plant as many trees as possible.</p>
+            <p>Can you figure out?</p>
+          </div>
+          <div class="mission-points">
+            <div class="point">
+              <div class="point-icon"></div>
+              <p>We recycle everything we see</p>
+            </div>
+            <div class="point">
+              <div class="point-icon"></div>
+              <p>We teach people how to reuse their stuff</p>
+            </div>
+            <div class="point">
+              <div class="point-icon"></div>
+              <p>We believe in human beings as problem solvers</p>
+            </div>
+          </div>
+        </section>
+        <section style="padding: 300px;text-align: center;">
+          <div class="hero-text">
+            <h1 style="font-size: 40px;">Featured things</h1>
+            <p>Our mission is very important to the planet: we plant as many
+              trees as possible. Can you figure out?</p>
+          </div>
+        </section>
+        <section style="display: flex;">
+          <div class="album py-5 bg-light">
+            <div class="container">
+        
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                        <small class="text-muted">9 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
+      </main>
+    </main>
+    <footer>
+        <p>&copy; 2022. All rights reserved. Privacy Policy | Cookies | Legal Advice | FAQ</p>
+    </footer>
+</body>
+</html>
